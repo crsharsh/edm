@@ -20,7 +20,7 @@ class Donors(models.Model):
     FirstName           = models.CharField(max_length=100)
     LastName            = models.CharField(max_length=100)
     Email               = models.EmailField(max_length=100)
-    PhoneNumber         = models.CharField(max_length=15)
+    PhoneNumber         = models.CharField(db_index=True,max_length=15)
     Comments            = models.CharField(max_length=100)
     StreetAddress       = models.CharField(max_length=100)
     City                = models.CharField(max_length=100)
