@@ -80,7 +80,7 @@ class FOODCATEGORY(models.Model):
     categoryID=models.IntegerField(max_length=20)
     
 class FOODENTRY(models.Model):
-    CategoryID=models.ForeignKey(FOODCATEGORY, on_delete=models.CASCADE)
+    CategoryID=models.ForeignKey(FOODCATEGORY, on_delete=models.CASCADE,primary_key=TRUE)
     foodEntryID=models.IntegerField(max_length=20,primary_key=True)
     
 class FOODCATEGORYDESC(models.Model):
