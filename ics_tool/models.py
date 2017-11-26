@@ -44,6 +44,7 @@ class Donations(models.Model):
     donationID =models.IntegerField(max_length=20,primary_key=True)
     donation_date=models.DateField()
     additional_comments=models.CharField(max_length=100)
+    dontype=models.CharField(max_length=20)
 
 class EBDGFOOD(models.Model):
     EDBGEvent_foodID= models.IntegerField(max_length=20,primary_key=True)
