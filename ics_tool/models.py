@@ -74,6 +74,8 @@ class FOOD(models.Model):
     avgCost=models.IntegerField(max_length=20)
     totalPounds=models.IntegerField(max_length=20)
     totalValue=models.IntegerField(max_length=20)
+    NoPounds=models.IntegerField(max_length=20)
+    ServingsperPound=models.IntegerField(max_length=20)
  
 class FOODCATEGORY(models.Model):
     donationID=models.ForeignKey(DONATIONS, on_delete=models.CASCADE,primary_key=TRUE)
